@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict ys9MLpKfuK71Ze8unIvLVtgsaD29hV1m0ETwUxfFYGPII5HVCBRL30sxr3ucRDl
+-- \restrict IrX2L1usJnWMOj2un5UryaKFXrsbnub17sSvDo0Bai3dGcV0aNcRG88KaqfgjTx
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -1462,15 +1462,7 @@ COPY "storage"."buckets_vectors" ("id", "type", "created_at", "updated_at") FROM
 -- Data for Name: objects; Type: TABLE DATA; Schema: storage; Owner: supabase_storage_admin
 --
 
-COPY "storage"."objects" ("id", "bucket_id", "name", "owner", "created_at", "updated_at", "last_accessed_at", "metadata", "version", "owner_id", "user_metadata", "level") FROM stdin;
-\.
-
-
---
--- Data for Name: prefixes; Type: TABLE DATA; Schema: storage; Owner: supabase_storage_admin
---
-
-COPY "storage"."prefixes" ("bucket_id", "name", "created_at", "updated_at") FROM stdin;
+COPY "storage"."objects" ("id", "bucket_id", "name", "owner", "created_at", "updated_at", "last_accessed_at", "metadata", "version", "owner_id", "user_metadata") FROM stdin;
 \.
 
 
@@ -1478,7 +1470,7 @@ COPY "storage"."prefixes" ("bucket_id", "name", "created_at", "updated_at") FROM
 -- Data for Name: s3_multipart_uploads; Type: TABLE DATA; Schema: storage; Owner: supabase_storage_admin
 --
 
-COPY "storage"."s3_multipart_uploads" ("id", "in_progress_size", "upload_signature", "bucket_id", "key", "version", "owner_id", "created_at", "user_metadata") FROM stdin;
+COPY "storage"."s3_multipart_uploads" ("id", "in_progress_size", "upload_signature", "bucket_id", "key", "version", "owner_id", "created_at", "user_metadata", "metadata") FROM stdin;
 \.
 
 
@@ -1586,6 +1578,6 @@ SELECT pg_catalog.setval('"public"."workflow_publish_history_id_seq"', 1, false)
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict ys9MLpKfuK71Ze8unIvLVtgsaD29hV1m0ETwUxfFYGPII5HVCBRL30sxr3ucRDl
+-- \unrestrict IrX2L1usJnWMOj2un5UryaKFXrsbnub17sSvDo0Bai3dGcV0aNcRG88KaqfgjTx
 
 RESET ALL;
