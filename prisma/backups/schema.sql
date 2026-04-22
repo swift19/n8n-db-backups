@@ -1972,6 +1972,168 @@ ALTER TABLE ONLY "public"."project"
 
 
 
+ALTER TABLE "public"."annotation_tag_entity" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."auth_identity" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."auth_provider_sync_history" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."binary_data" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."chat_hub_agents" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."chat_hub_messages" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."chat_hub_sessions" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."credentials_entity" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."data_table" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."data_table_column" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."dynamic_credential_entry" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."dynamic_credential_resolver" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."event_destinations" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."execution_annotation_tags" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."execution_annotations" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."execution_data" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."execution_entity" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."execution_metadata" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."folder" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."folder_tag" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."insights_by_period" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."insights_metadata" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."insights_raw" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."installed_nodes" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."installed_packages" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."invalid_auth_token" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."migrations" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."oauth_access_tokens" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."oauth_authorization_codes" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."oauth_clients" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."oauth_refresh_tokens" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."oauth_user_consents" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."processed_data" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."project" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."project_relation" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."role" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."role_scope" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."scope" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."settings" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."shared_credentials" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."shared_workflow" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."tag_entity" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."test_case_execution" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."test_run" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."user" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."user_api_keys" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."variables" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."webhook_entity" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."workflow_dependency" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."workflow_entity" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."workflow_history" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."workflow_publish_history" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."workflow_statistics" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."workflows_tags" ENABLE ROW LEVEL SECURITY;
+
+
 
 
 ALTER PUBLICATION "supabase_realtime" OWNER TO "postgres";
