@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict vyTPL6ssqt9kByATWtvuRhZfRwUiHAWAALLt0pmGxMQSluCeSzRtbmxzltWn7rW
+-- \restrict Ds5NToZ7nBXhsLKqPo2iZ8N6Bc8gHP1irknlnKJKGBKy5CeVGSlxH6cToUvQ5rR
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -231,7 +231,7 @@ workflow:editor	Workflow Editor	Workflow Editor	workflow	t	2026-01-09 01:12:51.5
 --
 
 COPY "public"."user" ("id", "email", "firstName", "lastName", "password", "personalizationAnswers", "createdAt", "updatedAt", "settings", "disabled", "mfaEnabled", "mfaSecret", "mfaRecoveryCodes", "lastActiveAt", "roleSlug") FROM stdin;
-c1a15235-ed35-4bec-8083-b6e3be1644d5	geraldbathan24@gmail.com	Geraldo	Bathan	$2a$10$gF/YnvMn.0wXKLaY0dxW1uuP5UVhvhPaHzFbFsXWc2PZEW5OyJV7.	{"version":"v4","personalization_survey_submitted_at":"2026-01-09T01:48:59.303Z","personalization_survey_n8n_version":"2.2.5","automationGoalDevops":["monitoring-alerting","data-syncing"],"companySize":"personalUser","companyType":"education","role":"it","reportedSource":"youtube"}	2026-01-09 01:07:00.566+00	2026-04-21 23:59:40.369+00	{"userActivated":false,"easyAIWorkflowOnboarded":true}	f	f	\N	\N	2026-04-21	global:owner
+c1a15235-ed35-4bec-8083-b6e3be1644d5	geraldbathan24@gmail.com	Geraldo	Bathan	$2a$10$gF/YnvMn.0wXKLaY0dxW1uuP5UVhvhPaHzFbFsXWc2PZEW5OyJV7.	{"version":"v4","personalization_survey_submitted_at":"2026-01-09T01:48:59.303Z","personalization_survey_n8n_version":"2.2.5","automationGoalDevops":["monitoring-alerting","data-syncing"],"companySize":"personalUser","companyType":"education","role":"it","reportedSource":"youtube"}	2026-01-09 01:07:00.566+00	2026-04-22 09:49:53.099+00	{"userActivated":false,"easyAIWorkflowOnboarded":true}	f	f	\N	\N	2026-04-22	global:owner
 \.
 
 
@@ -1621,6 +1621,6 @@ SELECT pg_catalog.setval('"public"."workflow_publish_history_id_seq"', 1, false)
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict vyTPL6ssqt9kByATWtvuRhZfRwUiHAWAALLt0pmGxMQSluCeSzRtbmxzltWn7rW
+-- \unrestrict Ds5NToZ7nBXhsLKqPo2iZ8N6Bc8gHP1irknlnKJKGBKy5CeVGSlxH6cToUvQ5rR
 
 RESET ALL;
