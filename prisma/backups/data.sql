@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict mCJcQfe8Hgqr4cT0Cygg8CrU9FNQk3g3cuYrbtB5CDf2ZldgpBTA0eK7ZTpr9lQ
+-- \restrict ARZo1PkwDQUb66Mra6HbeWKB7r5pqGqooeFlG5pf1dTcy1giFM4O5rBMIPT7TRA
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -1621,6 +1621,6 @@ SELECT pg_catalog.setval('"public"."workflow_publish_history_id_seq"', 1, false)
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict mCJcQfe8Hgqr4cT0Cygg8CrU9FNQk3g3cuYrbtB5CDf2ZldgpBTA0eK7ZTpr9lQ
+-- \unrestrict ARZo1PkwDQUb66Mra6HbeWKB7r5pqGqooeFlG5pf1dTcy1giFM4O5rBMIPT7TRA
 
 RESET ALL;
