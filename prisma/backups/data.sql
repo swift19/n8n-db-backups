@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict 76rtQfWeYw4vgJ22dUCBymWTS3rQzJxTCrWBvve6RWYIoOQuPmloazQ9QTLQ8uD
+-- \restrict 6vC8SuzEkjphHcOlKprw6aazKLKcUBayvr8I6obLUYo2o1ltv0p9hpEZlJDBYi3
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.11
@@ -1513,7 +1513,15 @@ LeagmHK_nal3-d2hiaOIn	gSdsfzrJpcnNmSRS
 -- Data for Name: buckets; Type: TABLE DATA; Schema: storage; Owner: supabase_storage_admin
 --
 
-COPY "storage"."buckets" ("id", "name", "owner", "created_at", "updated_at", "public", "avif_autodetection", "file_size_limit", "allowed_mime_types", "owner_id", "type") FROM stdin;
+COPY "storage"."buckets" ("id", "name", "owner", "created_at", "updated_at", "public", "avif_autodetection", "file_size_limit", "allowed_mime_types", "owner_id", "type", "versioning_status", "lifecycle_configuration", "lifecycle_configuration_generation") FROM stdin;
+\.
+
+
+--
+-- Data for Name: bucket_lifecycle_states; Type: TABLE DATA; Schema: storage; Owner: supabase_storage_admin
+--
+
+COPY "storage"."bucket_lifecycle_states" ("bucket_id", "generation", "next_run_at", "claim_id", "claim_until", "continuation", "last_started_at", "last_completed_at", "last_success_at", "last_result", "failure_count", "last_error", "updated_at") FROM stdin;
 \.
 
 
@@ -1534,10 +1542,18 @@ COPY "storage"."buckets_vectors" ("id", "type", "created_at", "updated_at") FROM
 
 
 --
+-- Data for Name: lifecycle_abandoned_artifacts; Type: TABLE DATA; Schema: storage; Owner: supabase_storage_admin
+--
+
+COPY "storage"."lifecycle_abandoned_artifacts" ("bucket_id", "key", "name", "version", "attempted_at") FROM stdin;
+\.
+
+
+--
 -- Data for Name: objects; Type: TABLE DATA; Schema: storage; Owner: supabase_storage_admin
 --
 
-COPY "storage"."objects" ("id", "bucket_id", "name", "owner", "created_at", "updated_at", "last_accessed_at", "metadata", "version", "owner_id", "user_metadata") FROM stdin;
+COPY "storage"."objects" ("id", "bucket_id", "name", "owner", "created_at", "updated_at", "last_accessed_at", "metadata", "version", "owner_id", "user_metadata", "archived_at", "is_delete_marker", "is_versioned") FROM stdin;
 \.
 
 
@@ -1653,6 +1669,6 @@ SELECT pg_catalog.setval('"public"."workflow_publish_history_id_seq"', 1, false)
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict 76rtQfWeYw4vgJ22dUCBymWTS3rQzJxTCrWBvve6RWYIoOQuPmloazQ9QTLQ8uD
+-- \unrestrict 6vC8SuzEkjphHcOlKprw6aazKLKcUBayvr8I6obLUYo2o1ltv0p9hpEZlJDBYi3
 
 RESET ALL;
